@@ -50,6 +50,8 @@ source("plot_expo.R")
 
 # Program for today
 
+0. Preface: Finding Inspiration for the Data Essay
+
 In this session, we will learn about maximum likelihood estimation:
 
 1.  Likelihood as a model of inference
@@ -66,6 +68,42 @@ In this session, we will learn about maximum likelihood estimation:
     -   We will explore the properties of the estimator with simulation
 
 ------------------------------------------------------------------------
+
+# Preface: Finding Inspiration for the Data Essay
+
+There is a dilemma: You are required to now find a topic for a term paper where you use methods that you don't know yet. Unfortunately, all I can say is that you have to trust the process. Many cohorts felt that way, but they all managed to find a topic and apply the methods we are teaching mostly in the second half of the course. If you are currently stuck, here are some things that may help you for your research:
+
+- The dependent variable of a study is key! As you already know the choice of your statistical model depends on how the dependent variable is scaled. In general, all scales are fine, but the default for continuous DVs is linear regression. But there are some options:
+
+  + Papers where the dependent variable is ordered or categorical are always candidates to build up on.
+  + Maybe you find a paper where the dependent variable is treated as continuous, but there are arguments why it actually should not be treated as such.
+      - maybe the variable can't take values below zero (or another threshold--think of electoral thresholds)
+      - maybe the variable is ordinal or even binary
+  + If the DV is continuous, you can make arguments about the variance component (more about this very soon).
+  + Sometimes it can be interesting to think about alternative dependent variables. In that case, you could use most of the data of a published paper, and try to add data for a new outcome variable.
+  
+Here are three brief examples of past projects:
+
+### 1. Risk attitudes and political intrerest as drivers of populist right voting?
+
+**Starting point**: Oshri et al (2021): Risk Aversion and the Gender Gap in the Vote for Populist Radical Right Parties. _American Journal of Political Science_.
+
+![Oshri et al, AJPS 2022, Abstract](images/oshri_et_al.png)
+
+
+**Key finding of the AJPS paper**: Gender differences in risk-taking help explain why men are more likely to vote for populist radical right parties than women.
+
+**Contribution of the data essay**: Instead of looking only at people who actually voted, the term paper included abstaining as an outcome option. In that way, the dependent variable that was binary in the original study (vote for PRRP or not) became categorical (vote for PRRP, other party, or abstain).
+
+### 2. Labour Union Membership and Racism
+
+**Starting point**: Frymer & Grumbach (2021): Labour Unions and White Racial Politics
+
+![Frymer & Grumbach, AJPS 2021, Abstract](images/frymer_grumbach.png)
+
+**Key finding of the AJPS paper**: White labor union members show lower racial resentment than non-members.
+
+**Contribution of the data essay**: Union members are a more homogeneous group than non-union members. Therefore, there should be less variation in racial resentment among union members than among non-members. This argument was tested with a heteroskedastic regression model.
 
 # Likelihood as a Model of Inference
 
