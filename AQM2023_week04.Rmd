@@ -71,9 +71,9 @@ In this session, we will learn about maximum likelihood estimation:
 
 # Preface: Finding Inspiration for the Data Essay
 
-There is a dilemma: You are required to now find a topic for a term paper where you use methods that you don't know yet. Unfortunately, all I can say is that you have to trust the process. Many cohorts felt that way, but they all managed to find a topic and apply the methods we are teaching mostly in the second half of the course. If you are currently stuck, here are some things that may help you for your research:
+You are in a tricky situation: We want you to find a topic for a term paper where you use methods that you don't know yet. Unfortunately, all I can say is that you have to trust the process. Many cohorts before you were in that situation, but they all managed to find a topic and apply the methods we are teaching mostly in the second half of the course. If you are currently stuck, here are some things that may help you:
 
-- The dependent variable of a study is key! As you already know the choice of your statistical model depends on how the dependent variable is scaled. In general, all scales are fine, but the default for continuous DVs is linear regression. But there are some options:
+- The dependent variable of a study is key! As you already know, the choice of your statistical model depends on how the dependent variable is scaled. In general, all scales are fine, but the default for continuous DVs is linear regression. But there are some options:
 
   + Papers where the dependent variable is ordered or categorical are always candidates to build up on.
   + Maybe you find a paper where the dependent variable is treated as continuous, but there are arguments why it actually should not be treated as such.
@@ -103,7 +103,20 @@ Here are three brief examples of past projects:
 
 **Key finding of the AJPS paper**: White labor union members show lower racial resentment than non-members.
 
-**Contribution of the data essay**: Union members are a more homogeneous group than non-union members. Therefore, there should be less variation in racial resentment among union members than among non-members. This argument was tested with a heteroskedastic regression model.
+**Contribution of the data essay**: Union members are a more homogeneous group than non-union members. Therefore, there should be less variation in racial resentment among union members than among non-members. This argument was tested with a heteroskedastic linear regression model.
+
+### 3. Party Entry of Radical Right Parties and Voter Polarization
+
+**Starting point**: Bischof & Wagner (2019): Do Voters Polarize When Radical Parties Enter Parliament? _American Journal of Political Science_.
+
+![Frymer & Grumbach, AJPS 2021, Abstract](images/bischof_wagner.png)
+
+**Key finding of the AJPS paper**: Voters polarize after radical right parties enter the national parliament.
+
+**Contribution of the data essay**: Original study constructs a polarization measure based on voters left-right placements (squared distance to median position) and it as DV in an linear regression (OLS). Authors of this paper incorporated polarization in error variance of the model (higher variance = higher polarization) and estimate a heteroskedastic ordered probit model.
+
+
+
 
 # Likelihood as a Model of Inference
 
